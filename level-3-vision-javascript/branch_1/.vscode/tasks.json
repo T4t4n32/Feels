@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar JavaFX",
+      "type": "shell",
+      "command": "javac",
+      "args": [
+        "--module-path",
+        "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.9.10-hotspot\\lib",
+        "--add-modules",
+        "javafx.controls,javafx.fxml",
+        "-d",
+        "bin",
+        "src\\*.java"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$javac"],
+      "group": "build",
+      "dependsOn": "clean"
+    },
+    {
+      "label": "clean",
+      "type": "shell",
+      "command": "powershell",
+      "args": ["-Command", "rm bin\\*.class -Force -ErrorAction SilentlyContinue"],
+      "problemMatcher": []
+    }
+  ]
+}
