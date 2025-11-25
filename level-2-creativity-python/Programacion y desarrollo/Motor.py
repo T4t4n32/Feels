@@ -653,7 +653,7 @@ while I == True:
                         if Op1 is None:
                             Op1 = Boton.boton(ventana, os.path.join(IMG_DIR, "Botones", "OP1R6.png"), pos=(posicion_X(0.01), posicion_Y(0.8)))
                             Op2 = Boton.boton(ventana, os.path.join(IMG_DIR, "Botones", "OP2R6.png"), pos=(posicion_X(0.38), posicion_Y(0.8)))
-                            Op3 = Boton.boton(ventana, os.path.join(IMG_DIR, "Botones", "OP2R6.png"), pos=(posicion_X(0.75), posicion_Y(0.8),))
+                            Op3 = Boton.boton(ventana, os.path.join(IMG_DIR, "Botones", "OP3R6.png"), pos=(posicion_X(0.75), posicion_Y(0.8),))
                         mostrar_boton = True
                     mouse_pos = pygame.mouse.get_pos()
                     mouse_click = pygame.mouse.get_pressed()[0]
