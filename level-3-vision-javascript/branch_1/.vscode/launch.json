@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Debug JavaFX",
+      "request": "launch",
+      "mainClass": "HelloFX",  // ¡Cambia esto si tu clase se llama diferente!
+      "classPaths": ["${workspaceFolder}/bin"],
+      "vmArgs": [
+        "--module-path",
+        "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.9.10-hotspot\\lib",
+        "--add-modules",
+        "javafx.controls,javafx.fxml"
+      ],
+      "console": "externalTerminal",
+      "preLaunchTask": "Compilar JavaFX"
+    }
+  ]
+}
